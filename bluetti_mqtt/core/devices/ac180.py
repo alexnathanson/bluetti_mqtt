@@ -2,7 +2,6 @@ from typing import List
 from ..commands import ReadHoldingRegisters
 from .bluetti_device import BluettiDevice
 from .struct import DeviceStruct
-from enum import Enum, unique
 
 class AC180(BluettiDevice):
     def __init__(self, address: str, sn: str):
