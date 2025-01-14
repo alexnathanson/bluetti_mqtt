@@ -36,7 +36,7 @@ class AC2A(BluettiDevice):
         #     for v in range(registers[k]):
         #         self.struct.add_uint_field('testI' + str(v+k), v+k)
 
-        super().__init__(address, 'AC180', sn)
+        super().__init__(address, 'AC2A', sn)
 
     @property
     def polling_commands(self) -> List[ReadHoldingRegisters]:
