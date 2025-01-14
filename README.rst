@@ -6,6 +6,16 @@ This tool provides an MQTT interface to Bluetti power stations. State will be
 published to the ``bluetti/state/[DEVICE NAME]/[PROPERTY]`` topic, and commands
 can be sent to the ``bluetti/command/[DEVICE NAME]/[PROPERTY]`` topic.
 
+Notes On This Fork
+------------
+
+Most of this repository is unchanged. It has been expanded to include support for AC180 and AC2A power stations.
+
+To install this version of bluetti_mqtt
+1) clone repository to RPi
+2) From inside the repository directory run `pip install .` It's generally a good idea to do this in a virtual environment.
+
+
 Installation
 ------------
 
