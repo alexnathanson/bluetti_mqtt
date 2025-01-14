@@ -3,7 +3,7 @@ from ..commands import ReadHoldingRegisters
 from .bluetti_device import BluettiDevice
 from .struct import DeviceStruct
 
-class AC2A(BluettiDevice):
+class AC180(BluettiDevice):
     def __init__(self, address: str, sn: str):
         self.struct = DeviceStruct()
 
@@ -36,7 +36,7 @@ class AC2A(BluettiDevice):
         #     for v in range(registers[k]):
         #         self.struct.add_uint_field('testI' + str(v+k), v+k)
 
-        super().__init__(address, 'AC2A', sn)
+        super().__init__(address, 'AC180', sn)
 
     @property
     def polling_commands(self) -> List[ReadHoldingRegisters]:
@@ -48,7 +48,7 @@ class AC2A(BluettiDevice):
     def logging_commands(self) -> List[ReadHoldingRegisters]:
         return [
             ReadHoldingRegisters(0,21),
-            ReadHoldingRegisters(100, 62),
+            ReadHoldingRegisters(100, 67),
             ReadHoldingRegisters(700,6),
             ReadHoldingRegisters(720,49),
             ReadHoldingRegisters(1100, 51),
