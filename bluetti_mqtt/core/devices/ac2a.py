@@ -61,6 +61,6 @@ class AC2A(BluettiDevice):
             ReadHoldingRegisters(3000, 27),
             ReadHoldingRegisters(6000, 31),
             ReadHoldingRegisters(6100, 100),
-            ReadHoldingRegisters(6300, 52),
-            ReadHoldingRegisters(7000,5)
+            ReadHoldingRegisters(6300, 52)
+            # ReadHoldingRegisters(7000,5)
         ]
