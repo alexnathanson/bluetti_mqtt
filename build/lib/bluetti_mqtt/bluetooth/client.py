@@ -55,6 +55,7 @@ class BluetoothClient:
             while True:
                 if self.state == ClientState.NOT_CONNECTED:
                     await self._connect()
+                    #async.run(self._connect())
                 elif self.state == ClientState.CONNECTED:
                     if not self.name:
                         await self._get_name()
