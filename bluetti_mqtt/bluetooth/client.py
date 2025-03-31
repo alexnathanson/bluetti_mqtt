@@ -72,6 +72,13 @@ class BluetoothClient:
             if self.client:
                 await self.client.disconnect()
 
+    # async def runManager(self):
+    #     try:
+    #         async with BleakClient(self.) as client:
+
+    #     except e as Exception:
+    #         print(e)
+
     async def _connect(self):
         """Establish connection to the bluetooth device"""
         try:
